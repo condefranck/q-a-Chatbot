@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.qa-box {
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+    height: 300px;
+    width: 230px;
+    background: black;
+    z-index: 9999999999999;
+    border: 1px #000 solid;
+    margin: 0 !important;
+}
+
+.qa-box-top {
+    height: 30px;
+    width: 100%;
+    background: #708090;
+}
+
+.qa-box-title {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 3px;
+}
+
+.qa-box-close {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.qa-box-open {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.qa-box-chat {
+    width:100%;
+    height:230px;
+    background-color: white;
+    overflow: auto;
+    overflow-y: scroll;
+    max-width:100%;
+    max-height:230px;
+}
+.qa-box-chat::-webkit-scrollbar {
+    width: 8px;
+}
+.qa-box-chat::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+.qa-box-chat::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+.qa-box-chat::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.qa-box-question {
+    display: block;
+    padding: 5px;
+    float: left;
+    background: #87ceeb;
+    border-radius: 5px;
+    margin: 5px;
+    width: 80%;
+}
+
+.qa-box-question-date {
+    color: #696969;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+.qa-box-question-text {
+    color: #696969;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.qa-box-answer {
+    display: block;
+    padding: 5px;
+    background: #e6e6fa;
+    float: right;
+    border-radius: 5px;
+    margin: 5px;
+    width: 80%;
+}
+
+.qa-box-answer-date {
+    color: #696969;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+
+.qa-box-answer-text {
+    color: #696969;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.qa-box-compose {
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background: #ffffff;
+}
+
+.qa-box-compose input[type=text], .qa-box-compose input[type=text]:focus {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #696969;
+    padding: 10px;
+    border: 0px;
+    outline-width: 0;
+}
+
+.qa-box-minify {
+	visibility: hidden;
+	position: absolute;
+    bottom: 0px;
+    right: 5%;
+    width: 230px;
+    height: 30px;
+    background: #708090;
+    z-index: 999999999999;
+    cursor: pointer;
+}
