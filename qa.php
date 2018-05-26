@@ -8,8 +8,7 @@ $data = Array();
 
 
 
-//banner words
-
+//banned words
 if(stripos($question, 'fuck') !== false || stripos($question, 'suck') !== false || stripos($question, 'bitch') !== false || stripos($question, 'ass') !== false) {
 	$data["answer"] = "Hey... don't be so rude!";
 	$data["situation"] = $situation;
@@ -21,7 +20,6 @@ if(stripos($question, 'fuck') !== false || stripos($question, 'suck') !== false 
 
 
 //chatbot situations and conversation
-
 switch ($situation) {
 
 
