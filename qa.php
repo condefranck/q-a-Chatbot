@@ -1,11 +1,24 @@
 <?php
 
-$question = $_GET["q"];
-$situation = $_GET["s"];
+//no PHP errors/warnings in JSON output
+ini_set('log_errors','On');
+ini_set('display_errors','Off');
+ini_set('error_reporting', 0 );
+
+//some check
+if isset($_GET["q"]) {
+	$question = htmlentities($_GET["q"]);
+} else {
+	$question = "";
+}
+if isset($_GET["s"]) {
+	$situation = htmlentities($_GET["s"]);
+} else {
+	$situation = 0;
+}
 
 $question = strtolower($question);
 $data = Array();
-
 
 
 //banned words
